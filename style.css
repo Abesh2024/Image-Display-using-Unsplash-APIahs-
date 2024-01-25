@@ -79,7 +79,7 @@ form {
 
 .search-result a {
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
     display: block;
     color: #333;
     padding: 10px;
@@ -89,11 +89,12 @@ form {
     font-size: 20px;
     background-color: #333;
     display: none;
-    padding: 10px 20px;
+    padding: 10px 18px;
     text-align: center;
     color: #FFF;
     margin: 30px auto;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 768px){
