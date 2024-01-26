@@ -63,17 +63,23 @@ form {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     /* flex-wrap: wrap; */
+    overflow: hidden;
 }
 
 .search-result img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    transition: opacity .3s ease-in-out;
+    /* transition: opacity .3s ease-in-out; */
+  transition: 0.3s ease-in-out;
+  /* overflow: hidden; */
+  filter: grayscale(25%);
+  box-shadow: 5px 5px 10px red;
 }
 
 .search-result img:hover {
-    opacity: 0.8;
+   transform: scale(1.1);
+  box-shadow: 5px 5px 10px blue;
     cursor: pointer;
 }
 
@@ -117,3 +123,4 @@ form {
         margin: 10px;
     }
 }
+

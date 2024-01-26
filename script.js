@@ -9,14 +9,13 @@ let inputdata = "";
 let page = 1
 
 async function searchImages(event) {
-    console.log("userInput=",inputEl.value);
+    // console.log("userInput=",inputEl.value);
     event.preventDefault()
 
     const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputEl.value}&client_id=${key}`
 
-    const response= await fetch(url);
+    const response = await fetch(url);
     const data = await response.json()
-console.log(data);
     const results = data.results
     console.log(results);
 
@@ -44,21 +43,10 @@ console.log(data);
     if(page > 1){
         showMore.style.display = "block";
     }
-    // const btn = document.createElement("button");
-    // btn.innerText = "Show More"
-    // searchResults.appendChild(btn);
-    // btn.addEventListener("click", (e)=>showMorefunc(e))
-    }
+}
+    
 
-    showMore.addEventListener("click", ()=>{
-        searchImages();
-    })
 
-    // function showMorefunc(e){
-    //     e.preventDefault();
-    //     page++;
-    //     console.log(page);
-    //     searchImages();
     
 
 
